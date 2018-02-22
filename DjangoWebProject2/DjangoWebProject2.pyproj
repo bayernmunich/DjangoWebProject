@@ -42,6 +42,9 @@
     <Compile Include="DjangoWebProject2\settings.py" />
     <Compile Include="DjangoWebProject2\urls.py" />
     <Compile Include="DjangoWebProject2\wsgi.py" />
+    <Compile Include="selenium.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
