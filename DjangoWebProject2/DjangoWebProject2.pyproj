@@ -5,6 +5,7 @@
     <Name>DjangoWebProject2</Name>
     <RootNamespace>DjangoWebProject2</RootNamespace>
     <InterpreterId>MSBuild|env_my|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,11 +13,11 @@
     <ProjectGuid>bd5f281b-2823-4568-b3fb-6fdf30050790</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>manage.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
-    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <WebBrowserUrl>http://localhost:50306</WebBrowserUrl>
     <LaunchProvider>Django launcher</LaunchProvider>
     <DjangoSettingsModule>DjangoWebProject2.settings</DjangoSettingsModule>
     <OutputPath>.</OutputPath>
@@ -31,6 +32,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -42,9 +46,6 @@
     <Compile Include="DjangoWebProject2\settings.py" />
     <Compile Include="DjangoWebProject2\urls.py" />
     <Compile Include="DjangoWebProject2\wsgi.py" />
-    <Compile Include="selenium.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
